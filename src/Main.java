@@ -9,7 +9,7 @@ public class Main {
         int option = 0;
         do {
             System.out.println("Menú:");
-            System.out.println("1. ");
+            System.out.println("1.Realizar operación +,-,*,/ ");
             System.out.println("2.");
             System.out.println("3. ");
             System.out.println("4. ");
@@ -22,7 +22,15 @@ public class Main {
             option = scanner.nextInt();
             scanner.nextLine();
 
-        }while (option != 9);
+            switch (option) {
 
+                case 1:
+                    System.out.println("Realizar operación +,-,*,/");
+                    new ExamenFinalVarianteA();
+                    break;
+
+            }
+        }while (option != 9);
+        scanner.close();
     }
 }
